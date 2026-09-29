@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIN NÓNG 24H</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #d40000;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        header span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* MENU */
+        nav {
+            background: #111;
+            padding: 12px 8%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff3333;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .hot-title {
+            border-left: 6px solid #d40000;
+            padding-left: 12px;
+            margin-bottom: 25px;
+            font-size: 26px;
+        }
+
+        /* VIDEO GRID */
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+        }
+
+        video {
+            width: 100%;
+            height: 280px;
+            display: block;
+            background: black;
+        }
+
+        .content {
+            padding: 18px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #d40000;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content h2 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .time {
+            margin-top: 12px;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 50px;
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                padding: 15px 5%;
+            }
+
+            .container {
+                width: 92%;
+            }
+
+            video {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🔥 TIN NÓNG 24H</h1>
+        <span>CẬP NHẬT MỚI NHẤT</span>
+    </header>
+
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Tin nóng</a>
+        <a href="#">Công nghệ</a>
+        <a href="#">Thể thao</a>
+    </nav>
+
+    <div class="container">
+
+        <h2 class="hot-title">🔥 TIN HOT MỚI NHẤT</h2>
+
+        <div class="news-grid">
+
+            <!-- VIDEO 1 -->
+            <div class="news-card">
+
+                <video controls poster="">
+                    <source src="347d89de-3aaa-414e-be10-d22d5f945a06.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video.
+                </video>
+
+                <div class="content">
+                    <span class="tag">TIN NÓNG</span>
+
+                    <h2>
+                        🔴 Em trai sau khi thua trận game fc mobile đồ sát anh trai ruột ngay tại nhà riêng
+                    </h2>
+
+                    <p>
+                        Cập nhật những thông tin đáng chú ý mới nhất.
+                        Video tổng hợp những diễn biến nổi bật trong ngày.
+                    </p>
+
+                    <div class="time">
+                        🕒 Cập nhật: Hôm nay
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 2 -->
+            <div class="news-card">
+
+                <video controls poster="">
+                    <source src="688dba8b-3f13-4fcc-9962-da948bd23467.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video.
+                </video>
+
+                <div class="content">
+                    <span class="tag">MỚI NHẤT</span>
+
+                    <h2>
+                        ⚡ Em trai sau khi thua trận game fc mobile đồ sát anh trai ruột ngay tại nhà riêng
+                    </h2>
+
+                    <p>
+                        Những hình ảnh và thông tin mới được cập nhật,
+                        giúp bạn nhanh chóng nắm bắt sự việc.
+                    </p>
+
+                    <div class="time">
+                        🕒 Cập nhật: Hôm nay
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 TIN NÓNG 24H | Cập nhật thông tin mỗi ngày
+    </footer>
+
+</body>
+</html>
